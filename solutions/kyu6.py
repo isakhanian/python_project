@@ -7,3 +7,10 @@ def tower_builder(n_floors):
     result.append(' ' * offset + '*' * stars + ' ' * offset)
     floor += 1
   return result
+
+  def find_in_array(seq, predicate): 
+  for i in range(len(seq)):
+    elem = seq[i]
+    if predicate(elem, i):
+      return i
+  return -1
